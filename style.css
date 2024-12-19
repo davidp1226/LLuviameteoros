@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #222627;
+}
+
+.meteoro {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgba(96, 182, 231, 0.5);
+    border-radius: 50%;
+    animation: flotacion 10s linear infinite;
+    margin: 20px;
+}
+
+.meteoro.color1 { background-color: white; }
+.meteoro.color2 { background-color: white; }
+.meteoro.color3 { background-color: white; }
+.meteoro.color4 { background-color: white; }
+.meteoro.color5 { background-color: white; }
+.meteoro.color6 { background-color: white; }
+.meteoro.color7 { background-color: white; }
+.meteoro.color9 { background-color: white; }
+
+.mensaje-final {
+    background-color: rgb(247, 0, 255);
+    text-decoration: dotted;
+}
+
+@keyframes flotacion {
+    0% {
+        top: 0;
+        left: var(--start-left);
+    }
+    100% {
+        top: 100vh;
+        left: var(--end-left);
+    }
+}
+
+.meteoro:nth-child(1) { 
+    --start-left: 5%; 
+    --end-left: 50%; 
+    animation-duration: 1s; 
+}
+.meteoro:nth-child(2) { 
+    --start-left: 15%; 
+    --end-left: 55%; 
+    animation-duration: 2s; 
+}
+.meteoro:nth-child(3) { 
+    --start-left: 25%; 
+    --end-left: 60%;
+    animation-duration: 1.5s; 
+}
+.meteoro:nth-child(4) { 
+    --start-left: 35%; 
+    --end-left: 70%; 
+    animation-duration: 2.5s; 
+}
+.meteoro:nth-child(5) { 
+    --start-left: 45%; 
+    --end-left: 75%;
+    animation-duration: 1s; 
+}
+.meteoro:nth-child(6) { 
+    --start-left: 55%; 
+    --end-left: 85%; 
+    animation-duration: 1.5s; 
+}
+.meteoro:nth-child(7) { 
+    --start-left: 65%; 
+    --end-left: 90%; 
+    animation-duration: 1s; 
+}
+.meteoro:nth-child(8) { 
+    --start-left: 75%; 
+    --end-left: 95%; 
+    animation-duration: 2s; 
+}
+.meteoro:nth-child(9) { 
+    --start-left: 85%; 
+    --end-left: 100%;
+    animation-duration: 3s; 
+}
